@@ -1,0 +1,14 @@
+image: roster.rtp.raleigh.ibm.com/ruby-nodejs:0.12.5
+script:
+  - npm install
+  - npm run install:bower:root
+  - npm test
+deploy:
+  cloudfoundry:
+    target: https://api.ng.bluemix.net/
+    app: ha--node-starter
+    username: $$CF_ID
+    password: $$CF_PWD
+    space: $$CF_SPACE
+    when:
+      branch: master

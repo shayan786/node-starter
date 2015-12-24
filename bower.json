@@ -1,0 +1,21 @@
+{
+  "name": "ha--node-starter",
+  "main": "index.js",
+  "version": "0.0.0",
+  "authors": [
+    "Sam Richard"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "sass-toolkit": "~2.9.0",
+    "ibm-colors": "~1.4.0"
+  }
+}
